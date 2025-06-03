@@ -39,7 +39,7 @@ function mostrarPokemon(poke){
                     ${tipos}
                 </div>
                 <div class="pokemon-medidas">
-                    <p class="stat">${poke.height / 10} cm</p>
+                    <p class="stat">${poke.height * 10} cm</p>
                     <p class="stat">${poke.weight / 10} kg</p>
                 </div>
             </div>
