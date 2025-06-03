@@ -18,7 +18,7 @@ function mostrarPokemon(poke){
     let pokeId = poke.id.toString();
     if (pokeId.length === 1){
         pokeId = "00" + pokeId
-    } else if (pokeId === 2){
+    } else if (pokeId.length === 2){
         pokeId = "0" + pokeId;
     }
 
@@ -39,8 +39,8 @@ function mostrarPokemon(poke){
                     ${tipos}
                 </div>
                 <div class="pokemon-medidas">
-                    <p class="stat">${poke.height}m</p>
-                    <p class="stat">${poke.weight}kg</p>
+                    <p class="stat">${poke.height / 10} cm</p>
+                    <p class="stat">${poke.weight / 10} kg</p>
                 </div>
             </div>
         </div>
